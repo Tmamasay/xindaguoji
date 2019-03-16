@@ -27,11 +27,11 @@
 </head>
 <body class="login-bg2">
 
-  <header class="aui-bar aui-bar-nav" id="aui-header" style="background-color:rgba(0,0,0,0) !important">
+  <header class="aui-bar aui-bar-nav" id="aui-header" style="background-color:#E8554E !important">
       <a class="aui-btn aui-pull-left" tapmode onclick="closeWin()">
-          <span class="aui-iconfont aui-icon-left"></span>
+          <span class="aui-iconfont aui-icon-left" style="color:#FFF"></span>
       </a>
-      <div id="title" class="aui-title">账号登录</div>
+      <div id="title" class="aui-title" style="color:#FFF">账号登录</div>
   </header>
 
   <div class="myui-from">
@@ -169,10 +169,10 @@
                   localStorage.setItem('user_code',ret.msg['code']);
                   localStorage.setItem('user_weichat',ret.msg['weichat']);
                   localStorage.setItem('url',ret.msg['url']);
-                  localStorage.setItem('url1',ret.msg['url1']);
-                  localStorage.setItem('url2',ret.msg['url2']);
-                  localStorage.setItem('url3',ret.msg['url3']);
-                  localStorage.setItem('url4',ret.msg['url4']);
+                  localStorage.setItem('url1',ret.msg['url1']+'&userID='+ret.msg['id']);
+                  localStorage.setItem('url2',ret.msg['url2']+'&userID='+ret.msg['id']);
+                  localStorage.setItem('url3',ret.msg['url3']+'&userID='+ret.msg['id']);
+                  localStorage.setItem('url4',ret.msg['url4']+'&userID='+ret.msg['id']);
                   api.sendEvent({
                     name: 'newLoingdata',
                     extra: {

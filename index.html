@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     <link rel="stylesheet" type="text/css" href="./css/iconfont.css">
     <style>
-        header{ background-color: #48aaf6; }
+        header{ background-color: #E8554E; }
         header ul li { height: 2.25rem; line-height: 2.25rem; text-align: center; display: none; color: #333; position: relative;font-size: 0.9rem;  }
         header ul li.active{ display: block; }
         #footer{  background-color: #ffffff;}
@@ -38,10 +38,10 @@
 <div id="wrap" class="flex-wrap flex-vertical">
     <header>
         <ul>
-          <li class="border-b active"  id="hbbox" style="color:#FFF"></li>
-          <li class="border-b" style="color:#FFF">直播大厅</li>
-          <li class="border-b" style="color:#FFF">福利社</li>
-          <li class="border-b" style="color:#FFF">会员中心</li>
+          <li class="border-b active"  id="hbbox" style="color:#FFF">首页</li>
+          <li class="border-b" style="color:#FFF">合买大厅</li>
+          <li class="border-b" style="color:#FFF">开奖</li>
+          <li class="border-b" style="color:#FFF">我的</li>
         </ul>
     </header>
     <div id="main" class="flex-con">
@@ -50,8 +50,8 @@
     <div id="footer" class="border-t">
         <ul class="flex-wrap" >
             <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con active" >首页</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >直播</li>
-            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >福利社</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >合买</li>
+            <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >开奖</li>
             <li tapmode="hover" onclick="randomSwitchBtn( this );" class="flex-con" >我的</li>
         </ul>
     </div>
@@ -114,7 +114,7 @@
 		          //渲染模板
 		          var pagefn = doT.template(hongbaotpl.text);
 		          ret.hb['name']=localStorage.getItem('na');
-		          hongbaoid.innerHTML = pagefn(ret.hb);
+		          // hongbaoid.innerHTML = pagefn(ret.hb);
 		//      alert( JSON.stringify( ret.banner ) );
 
 
